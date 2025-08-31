@@ -6,8 +6,17 @@ const todos = [
   { topic: "Clean the room", completed: true },
 ];
 
+
+function todoTop (todoss) {
+	return todoss.topic
+}
+
+
+
 function getTodoTopics(todos) {
   // Start coding here
+  let newTodos = todos.map(todoTop)
+  console.log(newTodos)
 }
 
 getTodoTopics(todos);
